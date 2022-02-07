@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Weather Results </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+</head>
+<body>
+    <h1> The Weather </h1>
+    <section>
+        <h1>City name : {{city}}</h1>
+        <h1>temp (in celcius) : {{temp}}</h1>
+    </section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #DA4453;
+    background: -webkit-linear-gradient(to bottom, #89216B, #DA4453);
+    background: linear-gradient(to bottom, #89216B, #DA4453);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10vh;
+    color: white;
+}
+
+form {
+    text-align: center;
+    margin-top: 45vh;
+}
+
+#weatherInput {
+    padding: 30px 30px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #959595;
+}
+
+#weatherSubmit {
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+section {
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav {
+    padding: 20px 30px;
+    color: white;
+}
+
+nav h1 { 
+    position: absolute;
+    font-weight: 700;
+}
+
+nav ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+}
+
+nav ul li {
+    padding: 20px 40px;
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}

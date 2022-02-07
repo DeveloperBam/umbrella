@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Umbrella | Weather </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='scripts/locationService.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li class="logo"><a href="#"> Umbrella </a></li>
+                <li><a href="#"> Search </a><i class="fas fa-search"></i></li>
+                <li><a href="#"> Recent </a><i class="fas fa-backward"></i></li>
+            </ul>
+        </nav>
+        <h1> Need an Umbrella? </h1>
+        <form id="weatherForm" action="{{ url_for('results') }}" method="post">
+            <input id="weatherInput" placeholder="e.g. london" type="text" name="city" required><br>
+            <input id="weatherSubmit" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>

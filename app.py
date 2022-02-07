@@ -37,7 +37,3 @@ def results():
 @app.route('/')
 def dashboard():
     return render_template('home.html')
-
-if __name__ == '__main__':
-    # Run the app server on localhost:4449
-    app.run('localhost', 4449)
